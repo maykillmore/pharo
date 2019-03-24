@@ -88,6 +88,14 @@ SmallInteger >> + aNumber [
 ]
 
 { #category : #arithmetic }
+SmallInteger >> ++ aNumber [
+	"comment stating purpose of message"
+
+	 <primitive:9>
+	^self - aNumber
+]
+
+{ #category : #arithmetic }
 SmallInteger >> - aNumber [ 
 	"Primitive. Subtract the argument from the receiver and answer with the
 	result if it is a SmallInteger. Fail if the argument or the result is not a
@@ -176,6 +184,22 @@ SmallInteger >> >= aNumber [
 
 	<primitive: 6>
 	^super >= aNumber
+]
+
+{ #category : #arithmetic }
+SmallInteger >> Plusplus [
+	"comment stating purpose of message"
+
+	 <primitive:9>
+	^self + 1
+]
+
+{ #category : #arithmetic }
+SmallInteger >> Plusplus: aNumber [
+	"comment stating purpose of message"
+
+	 <primitive:9>
+	^self - aNumber
 ]
 
 { #category : #arithmetic }
